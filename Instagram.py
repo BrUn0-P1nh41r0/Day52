@@ -37,7 +37,7 @@ class InstaFollower:
         followers.click()
 
         time.sleep(3)
-        list_of_followers = self.driver.find_element(By.XPATH, value='/html/body/div[5]/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]')
+        list_of_followers = self.driver.find_element(By.XPATH, value='/html/body/div[4]/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]/div[1]/div')
 
         for i in range(10):
             self.driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", list_of_followers)
